@@ -3,7 +3,7 @@ import heroimage from "../../../assets/images/hero-image.png";
 
 const Hero = () => {
     return (
-        <div className="bg-pink-200/50 ">
+        <div className="bg-[#fff8f5] ">
             <div className="flex lg:flex-row flex-col-reverse lg:max-w-screen-xl items-center  mx-auto">
                 {/* Text Section */}
                 <div className="flex-1  px-6 lg:px-16">
