@@ -1,4 +1,11 @@
-
+import { BsFlower1 } from "react-icons/bs";
+import { NavLink } from "react-router-dom";
+const navMenu = <>
+<li><NavLink to='/'>Home</NavLink></li>
+<li><NavLink to='/portfolio'>Our Portfolio</NavLink></li>
+<li><NavLink to='/team'>Our Team</NavLink></li>
+<li><NavLink to='/contact'>Contact Us</NavLink></li>
+</>
 const Navbar = () => {
     return (
         <div className=" flex items-center lg:px-64  w-full p-[0.5rem] min-h-16 bg-base-100 shadow-sm">
@@ -9,37 +16,22 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <li><a>Item 1</a></li>
-                        <li>
-                            <a>Parent</a>
-                            <ul className="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a>Item 3</a></li>
+                        className="menu menu-sm uppercase dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        {navMenu}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">Aymans</a>
+                <div className="flex items-center text-pink-600">
+                    <BsFlower1 className="text-3xl"></BsFlower1>
+                <a className=" ml-2 uppercase font-bold text-3xl">Aymans</a>
+                </div>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li>
-                        <details>
-                            <summary>Parent</summary>
-                            <ul className="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </details>
-                    </li>
-                    <li><a>Item 3</a></li>
+                <ul className="menu uppercase menu-horizontal px-1">
+                {navMenu}
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                <a className="btn bg-pink-600">Login</a>
             </div>
         </div>
     );
