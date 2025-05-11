@@ -31,7 +31,7 @@ const HomeServices = () => {
 
             </div>
             <div className='flex items-center justify-center my-12'>
-                <button className='btn btn-wide text-white bg-pink-600 rounded-xl '>Show More</button>
+                <button className='btn btn-wide text-white bg-pink-600 rounded-xl '>Explore More</button>
             </div>
         </div>
     );
